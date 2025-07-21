@@ -20,17 +20,6 @@ To build a classification model that predicts customer satisfaction using the fo
 - Random Forest
 - Support Vector Machine (SVM)
 
----
-
-## 🧰 Features Used
-
-- Gender, Age, Customer Type, Travel Class
-- Flight Distance, Departure/Arrival Delay
-- Service Ratings: Online booking, Inflight Wifi, Seat Comfort, Food, Cleanliness, etc.
-- Engineered Features: Delay Ratio, Average Rating, Binary Delay flag
-
----
-
 ## ✅ ML Pipeline
 
 1. **Data Cleaning**
@@ -38,7 +27,6 @@ To build a classification model that predicts customer satisfaction using the fo
    - Handling missing values (`arrival_delay_in_minutes`)
 2. **Preprocessing**
    - One-hot encoding with `DictVectorizer`
-   - Normalizing numerical features with `StandardScaler`
 3. **Modeling**
    - Logistic Regression with `GridSearchCV`
    - Random Forest Classifier
@@ -54,7 +42,7 @@ To build a classification model that predicts customer satisfaction using the fo
 
 | Model                       | Accuracy | F1 Score |
 | --------------------------- | -------- | -------- |
-| Logistic Regression (Tuned) | 85%      | 0.84     |
+| Logistic Regression (Tuned) | 85%      | 0.83     |
 | Random Forest               | 96%      | 0.96     |
 | SVM (LinearSVC)             | 83%      | 0.82     |
 
